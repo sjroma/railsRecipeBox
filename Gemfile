@@ -27,11 +27,15 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Added the following for Recipe Box
+gem 'haml', '~> 5.0', '>= 5.0.1' # alternate displa to erb
+gem 'simple_form', '~> 3.5' # creates simple forms easier
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # bootstrap styling
+gem 'paperclip', '~> 5.1'  # upload images
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
