@@ -32,10 +32,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Added the following for Recipe Box
-gem 'haml', '~> 5.0', '>= 5.0.1' # alternate displa to erb
+gem 'haml', '~> 5.0', '>= 5.0.1' # alternate display to erb
 gem 'simple_form', '~> 3.5' # creates simple forms easier
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # bootstrap styling
-gem 'paperclip', '~> 5.1'  # upload images
+gem 'paperclip', '~> 5.1'  # allows adding images
+# to create nested forms (ingredients & directions inside recipe)
+gem 'cocoon', '~> 1.2', '>= 1.2.10'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
