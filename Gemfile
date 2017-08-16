@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml', '~> 5.0', '>= 5.0.1' # alternate display to erb
 gem 'simple_form', '~> 3.5' # creates simple forms easier
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # bootstrap styling
+# because Rails 5.1 dropped jQuery from the default stack
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'paperclip', '~> 5.1'  # allows adding images
 # to create nested forms (ingredients & directions inside recipe)
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
