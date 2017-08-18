@@ -100,7 +100,7 @@ recipe_top {
 	margin-bottom: 50px;
 }
 
-#recipe_info, #ingredient, #directions {
+#recipe_info, #ingredients, #directions {
 	background: white;
 	@include box-shadow;
 	min-height: 360px;
@@ -137,19 +137,20 @@ recipe_top {
 	}
 }
 
-.form-inline {
-	margin-top: 15px;
+.panel-body {
+		.form-inline {
+		margin-top: 15px;
+	}
+	.form-input {
+		width: 65% !important;
+		float: left;
+	}
+	.form-button {
+		float: left;
+		width: 30% !important;
+		margin-left: 5%;
+	}
+	.add_button {
+		margin-top: 25px;
+	}
 }
-.form-input {
-	width: 65% !important;
-	float: left;
-}
-.form-button {
-	float: left;
-	width: 30% !important;
-	margin-left: 5%;
-}
-.add_button {
-	margin-top: 25px;
-}
-
