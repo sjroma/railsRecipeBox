@@ -18,14 +18,14 @@
 @import "bootstrap";
 
 body {
-	background-color: lightgrey;
+	background-color: #F5F5F5;
   font-family: 'Arial Rounded MT Bold', sans-serif;
 }
 
 @mixin box-shadow {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
-	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+	box-shadow: 2px 2px 0 #bbb;
+	-moz-box-shadow: 2px 2px 0 #bbb;
+	-webkit-box-shadow: 2px 2px 0 #bbb;
 }
 
 //$red: #DB6161;
@@ -40,24 +40,24 @@ body {
 }
 
 .alert {
-	padding: 15px;
-	margin-bottom: 20px;
-	border: 1px solid transparent;
-	border-radius: 5px;
 	@include box-shadow;
 	background: white;
+	border: 1px solid transparent;
+	border-radius: 5px;
 	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 15px;
 }
 
 .navbar {
-	margin-bottom: 50px;
 	@include box-shadow;
 	border: none;
+	margin-bottom: 50px;
 	.navbar-brand {
-		text-transform: uppercase;
-		letter-spacing: -1px;
-		font-weight: bold;
 		font-size: 25px;
+		font-weight: bold;
+		letter-spacing: -1px;
+		text-transform: uppercase;
 		a {
 			color: $green;
 		}
@@ -65,13 +65,13 @@ body {
 }
 
 .recipe {
+	@include box-shadow;
 	background: white;
 	border-radius: 5px;
 	margin-bottom: 40px;
-	@include box-shadow;
 	.image-wrapper {
-		max-width: 100%;
 		border-radius: 5px 5px 0 0;
+		max-width: 100%;
 		overflow: hidden;
   }
 	img {
@@ -85,11 +85,12 @@ body {
 		}
 	}
 	h2 {
-		padding: 15px 5%;
-		margin: 0;
 		font-size: 20px;
 		font-weight: normal;
 		line-height: 1.5;
+		margin: 0;
+		padding: 15px 5%;
+//		text-shadow: 1px 1px 1px #999;
 		a {
 			color: $green;
 		}
@@ -101,24 +102,25 @@ recipe_top {
 }
 
 #recipe_info, #ingredients, #directions {
-	background: white;
 	@include box-shadow;
-	min-height: 360px;
+  background:	whitesmoke;
 	border-radius: 5px;
+	min-height: 360px;
 	padding: 2em 8%;
 }
 
 .recipe_image {
-	max-width: 100%;
-	border-radius: 5px;
 	@include box-shadow;
+	border-radius: 5px;
+	max-width: 100%;
 }
 
 #recipe_info {
 	h1 {
+		color: $green;
 		font-size: 36px;
 		font-weight: normal;
-		color: $green;
+		text-shadow: 1px 1px 1px #999;
 	}
 	.description {
 		color: #8A8A8A;
@@ -131,8 +133,8 @@ recipe_top {
 	ul, ol {
 		padding-left: 18px;
 		li {
-			padding: 1em 0;
 			border-bottom: 1px solid #EAEAEA;
+			padding: 1em 0;
 		}
 	}
 }
@@ -146,13 +148,13 @@ p {
 		margin-top: 15px;
 	}
 	.form-input {
-		width: 65% !important;
 		float: left;
+		width: 65% !important;
 	}
 	.form-button {
 		float: left;
-		width: 30% !important;
 		margin-left: 5%;
+		width: 30% !important;
 	}
 	.add_button {
 		margin-top: 25px;
