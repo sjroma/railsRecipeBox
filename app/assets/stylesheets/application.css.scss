@@ -28,8 +28,9 @@ body {
 	-webkit-box-shadow: 2px 2px 0 #bbb;
 }
 
-//$red: #DB6161;
-$green: #35B045;
+// defines a global color
+//$green: #35B045;
+$green: #006400;
 
 body {
 	background: #EBEEF3;
@@ -66,7 +67,7 @@ body {
 
 .recipe {
 	@include box-shadow;
-	background: white;
+	background: whitesmoke;
 	border-radius: 5px;
 	margin-bottom: 40px;
 	.image-wrapper {
@@ -75,13 +76,15 @@ body {
 		overflow: hidden;
   }
 	img {
+		border-radius: 5px 5px 0 0;
 		width: 100%;
-//		-webkit-transition: all .3s ease-out;
-//		-moz-transition: all .3s ease-out;
-//		-o-transition: all .3s ease-out;
-//		transition: all .3s ease-out;
+		-webkit-transition: all .4s ease-out;
+		-moz-transition: all .4s ease-out;
+		-o-transition: all .4s ease-out;
+		transition: all .4s ease-out;
 		&:hover {
-			transform: scale(1.075);
+//			transform: scale(1.075);
+			transform: rotateY(180deg);
 		}
 	}
 	h2 {
@@ -105,7 +108,7 @@ recipe_top {
 	@include box-shadow;
   background:	whitesmoke;
 	border-radius: 5px;
-	min-height: 360px;
+	min-height: 300px;
 	padding: 2em 8%;
 }
 
@@ -130,6 +133,7 @@ recipe_top {
 
 #ingredients, #directions {
 	margin-bottom: 50px;
+	margin-top: 9px;
 	ul, ol {
 		padding-left: 18px;
 		li {
@@ -140,7 +144,7 @@ recipe_top {
 }
 
 p {
-    white-space: pre-line;
+    white-space: pre-line; //this makes prep & cook times appear on separate lines
 }
 
 .panel-body {
