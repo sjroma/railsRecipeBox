@@ -58,11 +58,17 @@ body {
 		font-size: 25px;
 		font-weight: bold;
 		letter-spacing: -1px;
+		text-decoration: none;
 		text-transform: uppercase;
 		a {
 			color: $green;
+			text-decoration: none;
 		}
 	}
+}
+
+.navbar-brand:hover {
+	transform: scale(1.06);
 }
 
 .recipe {
@@ -129,6 +135,20 @@ recipe_top {
 		color: #8A8A8A;
 		font-size: 20px;
 	}
+}
+
+#recipe_title {
+	width: 100%;
+}
+
+#recipe_description {
+	height: 70px;
+	width: 100%; 
+}
+
+#recipe_image {
+	height: 100%;
+	width: 100%
 }
 
 #ingredients, #directions {
