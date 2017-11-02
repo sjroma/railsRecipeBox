@@ -34,6 +34,7 @@ $green: #006400;
 
 body {
 	background: #EBEEF3;
+	background-color: #EEE8AA; //palegoldenrod
 }
 
 .main_content {
@@ -67,6 +68,7 @@ body {
 	}
 }
 
+// let's grow the title when user hovers so they know it's clickable
 .navbar-brand:hover {
 	transform: scale(1.06);
 }
@@ -112,7 +114,8 @@ recipe_top {
 
 #recipe_info, #ingredients, #directions {
 	@include box-shadow;
-  background:	whitesmoke;
+  background:	#F5F5F5; // whitesmoke
+//	background: #EEE8AA; // palegoldenrod
 	border-radius: 5px;
 	min-height: 300px;
 	padding: 2em 8%;
@@ -157,7 +160,7 @@ recipe_top {
 	ul, ol {
 		padding-left: 18px;
 		li {
-			border-bottom: 1px solid #EAEAEA;
+			border-bottom: 1px solid #EAEAEA; // ingred/directions separator
 			padding: 1em 0;
 		}
 	}
