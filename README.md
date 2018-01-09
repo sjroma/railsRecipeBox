@@ -8,21 +8,21 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-** Ruby on Rails v5.1.3
+    * Ruby on Rails v5.1.3
 
 * System dependencies
-** postgreSQL v9.6.3
+    * postgreSQL v9.6.3
 
 * Configuration
 
 * Database creation
-** At the command line in the cloned directory run;
+    * At the command line in the cloned directory run;
 ```ruby
 rails db:create
 ```
 
 * Database initialization
-** At the command line in the cloned directory run;
+    * At the command line in the cloned directory run;
 ```ruby
 rake db:migrate
 ```
