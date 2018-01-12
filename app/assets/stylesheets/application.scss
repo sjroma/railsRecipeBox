@@ -95,7 +95,7 @@ body {
 	}
 	h2 {
 		font-size: 20px;
-		font-weight: normal;
+		font-weight: bold;
 		line-height: 1.5;
 		margin: 0;
 		padding: 15px 5%;
@@ -104,10 +104,6 @@ body {
 			color: $green;
 		}
 	}
-}
-
-h3 {
-	font-weight: bold;
 }
 
 #recipe_top {
