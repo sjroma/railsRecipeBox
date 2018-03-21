@@ -99,7 +99,7 @@ body {
 		line-height: 1.5;
 		margin: 0;
 		padding: 15px 5%;
-//		text-shadow: 1px 1px 1px #999;
+//		text-shadow: 0.5px 0.5px 0.5px #999;
 		a {
 			color: $green;
 		}
@@ -107,7 +107,11 @@ body {
 }
 
 #h2 {
-	font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 15px 5%;
+//  text-shadow: 1px 1px 1px #999;
 }
 
 #recipe_top {
@@ -162,8 +166,7 @@ body {
 	ul, ol {
 		padding-left: 18px;
 		li {
-			//border-bottom: 1px solid #EAEAEA; // ingred/directions separator
-			border-bottom: 1px solid #AAA; // ingred/directions separator
+			border-bottom: 1px solid #AAA; // ingredients/directions separator
 			padding: 1em 0;
 		}
 	}
@@ -171,7 +174,7 @@ body {
 
 p {
 	  font-size: 15px;
-    white-space: pre-line; //this makes prep & cook times appear on separate lines
+    white-space: pre-line; // makes prep & cook times appear on separate lines
 }
 
 .panel-body {
