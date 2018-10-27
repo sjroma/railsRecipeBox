@@ -28,6 +28,10 @@ rake db:migrate
 ```
 
 * How to run the test suite
+    * for the models test run; 
+    ```ruby
+    ruby -Itest test/models/recipe_test.rb
+    ```
 
 * Services (job queues, cache servers, search engines, etc.)
 
