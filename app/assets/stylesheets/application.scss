@@ -21,18 +21,26 @@ body {
 }
 
 @mixin box-shadow {
-	box-shadow: 2px 2px 0 #bbb;
-	-moz-box-shadow: 2px 2px 0 #bbb;
-	-webkit-box-shadow: 2px 2px 0 #bbb;
+	box-shadow: 2px 2px 0 #BBB;
+  -webkit-box-shadow: 2px 2px 0 #BBB; // Chrome and Safari
+	-moz-box-shadow: 2px 2px 0 #BBB; // Firefox
+  -o-transition: 2px 2px 0 #BBB; // Opera
 }
 
-// defines a global color
-//$green: #35B045;
+// define a global color
 $green: #006400;
 
 body {
 	background: #EBEEF3;
 	background-color: #EEE8AA; //palegoldenrod
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20 px;
+  padding-top: 10 px;
+  padding-right: 15px;
 }
 
 .main_content {
@@ -41,7 +49,7 @@ body {
 
 .alert {
 	@include box-shadow;
-	background: white;
+	background: #FFF;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	font-weight: bold;
@@ -66,14 +74,14 @@ body {
 	}
 }
 
-// let's grow the title when user hovers so they know it's clickable
+// grow the title when user hovers so they know it's clickable
 .navbar-brand:hover {
 	transform: scale(1.06);
 }
 
 .recipe {
 	@include box-shadow;
-	background: whitesmoke;
+  background: #F5F5F5; // whitesmoke;
 	border-radius: 5px;
 	margin-bottom: 40px;
 	.image-wrapper {
@@ -84,12 +92,12 @@ body {
 	img {
 		border-radius: 5px 5px 0 0;
 		width: 100%;
-		-webkit-transition: all .4s ease-out;
-		-moz-transition: all .4s ease-out;
-		-o-transition: all .4s ease-out;
+		-webkit-transition: all .4s ease-out; // Chrome and Safari
+		-moz-transition: all .4s ease-out; // Firefox
+		-o-transition: all .4s ease-out; // Opera
 		transition: all .4s ease-out;
 		&:hover {
-//			transform: scale(1.075);
+//			transform: scale(1.075); supposed to grow the image slightly
 			transform: rotateY(180deg);
 		}
 	}
@@ -121,7 +129,6 @@ body {
 #recipe_info, #ingredients, #directions {
 	@include box-shadow;
   background:	#F5F5F5; // whitesmoke
-//	background: #EEE8AA; // palegoldenrod
 	border-radius: 5px;
 	min-height: 300px;
 	padding: 1em 5%;
@@ -166,7 +173,7 @@ body {
 	ul, ol {
 		padding-left: 18px;
 		li {
-			border-bottom: 1px solid #AAA; // ingredients/directions separator
+			border-bottom: 1px solid #AAA; // separator between each ingredient/direction
 			padding: 1em 0;
 		}
 	}
