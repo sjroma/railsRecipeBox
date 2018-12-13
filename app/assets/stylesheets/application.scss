@@ -84,7 +84,7 @@ body {
   background: #F5F5F5; // whitesmoke;
 	border-radius: 5px;
 	margin-bottom: 40px;
-	.image-wrapper {
+	.image_wrapper {
 		border-radius: 5px 5px 0 0;
 		max-width: 100%;
 		overflow: hidden;
@@ -184,7 +184,7 @@ p {
     white-space: pre-line; // makes prep & cook times appear on separate lines
 }
 
-.panel-body {
+.panel_body {
 		.form-inline {
 		margin-top: 15px;
 	}
@@ -197,7 +197,7 @@ p {
 		margin-left: 5%;
 		width: 30% !important;
 	}
-	.add_button {
+	.add-button {
 		margin-top: 25px;
 	}
 }
