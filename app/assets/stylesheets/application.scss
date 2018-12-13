@@ -21,10 +21,10 @@ body {
 }
 
 @mixin box-shadow {
-	box-shadow: 2px 2px 0 #BBB;
-  -webkit-box-shadow: 2px 2px 0 #BBB; // Chrome and Safari
-	-moz-box-shadow: 2px 2px 0 #BBB; // Firefox
-  -o-transition: 2px 2px 0 #BBB; // Opera
+	box-shadow: 7px 7px 10px #777;
+  -webkit-box-shadow: 7px 7px 10px #777; // Chrome and Safari
+	-moz-box-shadow: 7px 7px 10px #777; // Firefox
+  -o-transition: 7px 7px 10px #777; // Opera
 }
 
 // define a global color
