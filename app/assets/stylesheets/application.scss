@@ -43,7 +43,7 @@ body {
   padding-right: 15px;
 }
 
-.main_content {
+.main-content {
 	padding: 0 0 50px 0;
 }
 
@@ -71,12 +71,10 @@ body {
 			color: $green;
 			text-decoration: none;
 		}
+    &:hover {
+      transform: scale(1.06);
+    }
 	}
-}
-
-// grow the title when user hovers so they know it's clickable
-.navbar-brand:hover {
-	transform: scale(1.06);
 }
 
 .recipe {
@@ -84,7 +82,7 @@ body {
   background: #F5F5F5; // whitesmoke;
 	border-radius: 5px;
 	margin-bottom: 40px;
-	.image_wrapper {
+	.image-wrapper {
 		border-radius: 5px 5px 0 0;
 		max-width: 100%;
 		overflow: hidden;
@@ -97,7 +95,7 @@ body {
 		-o-transition: all .4s ease-out; // Opera
 		transition: all .4s ease-out;
 		&:hover {
-//			transform: scale(1.075); supposed to grow the image slightly
+      // transform: scale(1.075); supposed to grow the image slightly
 			transform: rotateY(180deg);
 		}
 	}
@@ -107,7 +105,8 @@ body {
 		line-height: 1.5;
 		margin: 0;
 		padding: 15px 5%;
-//		text-shadow: 0.5px 0.5px 0.5px #999;
+    text-shadow: 5px 5px 10px #aaa;
+    //text-shadow: 0.5px 0.5px 0.5px #999;
 		a {
 			color: $green;
 		}
@@ -119,14 +118,15 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 15px 5%;
-//  text-shadow: 1px 1px 1px #999;
+  // text-shadow: 5px 5px 10px #aaa;
+  // text-shadow: 1px 1px 1px #999;
 }
 
-#recipe_top {
+#recipe-top {
 	margin-bottom: 50px;
 }
 
-#recipe_info, #ingredients, #directions {
+#recipe-info, #ingredients, #directions {
 	@include box-shadow;
   background:	#F5F5F5; // whitesmoke
 	border-radius: 5px;
@@ -134,13 +134,13 @@ body {
 	padding: 1em 5%;
 }
 
-.recipe_img {
+.recipe-img {
 	@include box-shadow;
 	border-radius: 5px;
 	max-width: 100%;
 }
 
-#recipe_info {
+#recipe-info {
 	h1 {
 		color: $green;
 		font-size: 36px;
@@ -185,7 +185,7 @@ p {
 }
 
 .panel_body {
-		.form-inline {
+  .form-inline {
 		margin-top: 15px;
 	}
 	.form-input {
