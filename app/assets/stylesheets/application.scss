@@ -95,8 +95,8 @@ body {
 		-o-transition: all .4s ease-out; // Opera
 		transition: all .4s ease-out;
 		&:hover {
-      // transform: scale(1.075); supposed to grow the image slightly
-			transform: rotateY(180deg);
+      transform: scale(1.075); //grow the image slightly when hovered
+			// transform: rotateY(180deg);
 		}
 	}
   
