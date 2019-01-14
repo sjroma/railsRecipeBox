@@ -7,7 +7,7 @@
 &nbsp; - postgreSQL v9.6.3
 
 * Gems used<br>
-&nbsp: - [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass)<br>
+&nbsp; - [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass)<br>
 &nbsp; - [cocoon](https://rubygems.org/gems/cocoon)<br>
 &nbsp; - [paperclip](https://rubygems.org/gems/paperclip)<br>
 &nbsp; - [simple_form](https://rubygems.org/gems/simple_form)<br>
