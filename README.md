@@ -13,19 +13,19 @@ This README documents steps necessary to get the application up and running.
 * Database creation<br>
 &nbsp; &nbsp; - At the command line in the cloned directory run;
 ```ruby
-# rails db:create
+#rails db:create
 ```
 
 * Database initialization<br>
 &nbsp; &nbsp; - At the command line in the cloned directory run;
 ```ruby
-# rake db:migrate
+#rake db:migrate
 ```
 
 * How to run the test suite<br>
 &nbsp; &nbsp; - For the models test run; 
 ```ruby
-# ruby -Itest test/models/recipe_test.rb
+#ruby -Itest test/models/recipe_test.rb
 ```
 
 * Services (job queues, cache servers, search engines, etc.)
