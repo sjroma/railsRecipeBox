@@ -8,6 +8,11 @@ This README documents steps necessary to get the application up and running.
 * System dependencies<br>
 &nbsp; &nbsp; - postgreSQL v9.6.3
 
+* Gems used<br>
+&nbsp; - cocoon<br>
+&nbsp; - paperclip<br>
+&nbsp; - simple_form<br>
+
 * Configuration
 
 * Database creation<br>
@@ -22,8 +27,8 @@ rails db:create
 rake db:migrate
 ```
 
-* How to run the test suite<br>
-&nbsp; &nbsp; - For the models test run; 
+* Running the test suites<br>
+&nbsp; &nbsp; - For the **models tests** run; 
 ```ruby
 #ruby -Itest test/models/recipe_test.rb
 ```
@@ -33,15 +38,10 @@ rake db:migrate
 * Deployment instructions
 
 ### To-do
-[ ] Hide recipe id's, etc in the URL<br>
-&nbsp; Look into 
-```ruby 
-is_sluggable
-``` 
-&nbsp; and the **friendly_id** gem<br>
+[ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and/or  the **friendly_id** gem<br>
 [ ] Add ability to search by ingredients<br>
 [ ] Add ability for users to sign in<br>
-[ ] Make a landing page that is generic and allows users to search for a recipe based 
+[ ] Add a generic landing page that allows users to search for a recipe based 
 on whether it is an Entree, Soup, Bread, Dessert, etc.<br>
 
-* Recipe Box originated by Mackenzie Child. Modifications by Steve Roma
+#### Recipe Box originated by Mackenzie Child. Modifications by Steve Roma
