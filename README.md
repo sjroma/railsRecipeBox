@@ -34,8 +34,12 @@ rake db:migrate
 
 ### To-do
 [ ] Hide recipe id's, etc in the URL<br>
-&nbsp; Look into ```ruby # is_sluggable ``` and the **friendly_id** gem<br>
-[ ] Look into adding the ability to search by an ingredient<br>
+&nbsp; Look into 
+```ruby 
+is_sluggable
+``` 
+&nbsp; and the **friendly_id** gem<br>
+[ ] Add ability to search by ingredients<br>
 [ ] Add ability for users to sign in<br>
 [ ] Make a landing page that is generic and allows users to search for a recipe based 
 on whether it is an Entree, Soup, Bread, Dessert, etc.<br>
