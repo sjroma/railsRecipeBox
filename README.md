@@ -12,14 +12,14 @@ This README documents steps necessary to get the application up and running.
 
 * Database creation<br>
 &nbsp; &nbsp; - At the command line in the cloned directory run;
-```ruby
-#rails db:create
+``` ruby
+rails db:create
 ```
 
 * Database initialization<br>
 &nbsp; &nbsp; - At the command line in the cloned directory run;
 ```ruby
-#rake db:migrate
+rake db:migrate
 ```
 
 * How to run the test suite<br>
