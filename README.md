@@ -1,47 +1,35 @@
-# Recipe Box application - created with Ruby on Rails
-
-This README documents steps necessary to get the application up and running.
+# Recipe Box, a Ruby on Rails application
 
 * Ruby version<br>
-&nbsp; &nbsp; - Ruby on Rails v5.1.3
+&nbsp; - Ruby on Rails v5.1.3
 
 * System dependencies<br>
-&nbsp; &nbsp; - postgreSQL v9.6.3
+&nbsp; - postgreSQL v9.6.3
 
 * Gems used<br>
-&nbsp; - cocoon<br>
-&nbsp; - paperclip<br>
-&nbsp; - simple_form<br>
+&nbsp: - [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass)<br>
+&nbsp; - [cocoon](https://rubygems.org/gems/cocoon)<br>
+&nbsp; - [paperclip](https://rubygems.org/gems/paperclip)<br>
+&nbsp; - [simple_form](https://rubygems.org/gems/simple_form)<br>
 
-* Configuration
+### Clone this repository
 
-* Database creation<br>
-&nbsp; &nbsp; - At the command line in the cloned directory run;
-``` ruby
-rails db:create
-```
+After cloning you will need to create and then initialize the database.
 
-* Database initialization<br>
-&nbsp; &nbsp; - At the command line in the cloned directory run;
-```ruby
-rake db:migrate
-```
+* Create the database;<br>
+&nbsp; - At the command line in the cloned directory run `rails db:create`
+
+* Initialize the database;<br>
+&nbsp; - At the command line in the cloned directory run `rake db:migrate`
 
 * Running the test suites<br>
-&nbsp; &nbsp; - For the **models tests** run; 
-```ruby
-#ruby -Itest test/models/recipe_test.rb
-```
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+&nbsp; - For the **models tests** run `ruby -Itest test/models/recipe_test.rb`
 
 ### To-do
-[ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and/or  the **friendly_id** gem<br>
+[ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and/or the **friendly_id** gem<br>
 [ ] Add ability to search by ingredients<br>
 [ ] Add ability for users to sign in<br>
-[ ] Add a generic landing page that allows users to search for a recipe based 
-on whether it is an Entree, Soup, Bread, Dessert, etc.<br>
+[ ] Restyle to add a generic landing page that allows users to select the list of recipes 
+based on whether they are an Entree, Soup, Bread, Dessert, etc.<br>
 
 #### Recipe Box originated by Mackenzie Child. Modifications by Steve Roma
