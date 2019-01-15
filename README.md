@@ -26,10 +26,10 @@ After cloning you will need to create and then initialize the database.
 &nbsp; - For the **models tests** run `ruby -Itest test/models/recipe_test.rb`
 
 ### To-do
-[ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and/or the **friendly_id** gem<br>
-[ ] Add ability to search by ingredients<br>
-[ ] Add ability for users to sign in<br>
-[ ] Restyle to add a generic landing page that allows users to select the list of recipes 
-based on whether they are an Entree, Soup, Bread, Dessert, etc.<br>
+- [ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and the **friendly_id** gem
+- [ ] Add ability to search by ingredients
+- [ ] Add ability for users to sign in
+- [ ] Refactor to add a generic landing page that allows users to select the list of recipes 
+based on whether they are an Entree, Soup, Bread, Dessert, etc.
 
 #### Recipe Box originated by Mackenzie Child. Modifications by Steve Roma
