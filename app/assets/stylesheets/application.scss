@@ -14,10 +14,11 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+//@import url('https://fonts.googleapis.com/css?family=Englebert');
 
 body {
-	background-color: #F5F5F5;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
+	background-color: #F5F5F5; //whitesmoke 
+  font-family: 'Englebert', 'Arial Rounded MT Bold', sans-serif;
 }
 
 @mixin box-shadow {
@@ -25,6 +26,13 @@ body {
   -webkit-box-shadow: 7px 7px 10px #777; // Chrome and Safari
 	-moz-box-shadow: 7px 7px 10px #777; // Firefox
   -o-transition: 7px 7px 10px #777; // Opera
+}
+
+@mixin text-shadow {
+  -webkit-text-shadow: 1px 1px 1px #AAA;
+  -moz-text-shadow: 1px 1px 1px #AAA;
+  -o-text-shadow: 1px 1px 1px #AAA;
+  text-shadow: 1px 1px 1px #AAA;
 }
 
 // define a global color
@@ -68,24 +76,67 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 		a {
+      @include text-shadow;
 			color: $green;
 			text-decoration: none;
-      text-shadow: 1px 1px 1px #AAA;
-		}
+    }
     &:hover {
       transform: scale(1.075);
+      -webkit-transition: all .15s linear; // Chrome and Safari
+		  -moz-transition: all .15s linear; // Firefox
+		  -o-transition: all .15s linear; // Opera
+      transition: all .15s linear;
     }
 	}
 }
 
+//titles ('New Recipe' & 'Edit Recipe') of the new and edit pages so styling flows
+// app/views/recipes/edit.html.erb and app/views/recipes/new.html.erb
 .edit-new-header {
   color: $green;
   text-shadow: 2px 2px 2px #AAA;
 }
 
+//start random styling of recipes. this gives the index (landing) page a little twist (pun intended)
+.row .col-md-4 .recipe { 
+  -webkit-transform: rotate(-6deg); // Chrome and Safari
+  -moz-transform: rotate(-6deg); // Firefox
+  -o-transform: rotate(-6deg); // Opera
+  transform: rotate(-6deg);
+}
+
+.row .col-md-4:nth-child(even) .recipe { 
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  }
+
+.row .col-md-4:nth-child(3n) .recipe { 
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  }
+
+.row .col-md-4:nth-child(5n) .recipe { 
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+//end of the random styling. comment these stanzas and the recipes will line up uniformly.
+//when commenting these stanzas also change .each_slice() in app/views/recipes/index.html.erb to 3
+
 .recipe {
 	@include box-shadow;
-  background: #F5F5F5; // whitesmoke;
+  background: #F5F5F5; //whitesmoke;
 	border-radius: 5px;
 	margin-bottom: 40px;
 	.image-wrapper {
@@ -96,23 +147,28 @@ body {
 	img {
 		border-radius: 5px 5px 0 0;
 		width: 100%;
-		-webkit-transition: all .4s ease-out; // Chrome and Safari
-		-moz-transition: all .4s ease-out; // Firefox
-		-o-transition: all .4s ease-out; // Opera
-		transition: all .4s ease-out;
 		&:hover {
-      transform: scale(1.075); //grow the image when hovered
-			// transform: rotateY(180deg);
+      transform: scale(1.25); //grow the image when hovered
+      -webkit-transition: all .4s ease-out; // Chrome and Safari
+		  -moz-transition: all .4s ease-out; // Firefox
+		  -o-transition: all .4s ease-out; // Opera
+      transition: all .4s ease-out;
+      //Comment out the five lines above and uncomment below for a different hover action
+		  //transform: rotateY(180deg); //rotate the image when hovered
+      //-webkit-transition: -webkit-transform .4s linear; /*linear-same speed from start to end*/
+      //-moz-transition: -moz-transform .4s linear;
+      //-o-transition: -o-transform .4s linear;
+      //transition: -o-transform .4s linear;
 		}
 	}
-  
+  //the link (recipe title) under each recipe image on the index/landing page
 	h2 {
+    @include text-shadow;
 		font-size: 20px;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0;
 		padding: 15px 5%;
-    text-shadow: 1px 1px 1px #AAA;
 		a {
 			color: $green;
 		}
@@ -120,12 +176,12 @@ body {
 }
 
 #h2 {
+  @include text-shadow;
   color: $green;
   font-size: 25px;
   line-height: 1.5;
   margin-left: -30px;
   padding: 15px 5%;
-   text-shadow: 1px 1px 1px #AAA;
 }
 
 #recipe-top {
@@ -134,7 +190,7 @@ body {
 
 #recipe-info, #ingredients, #directions {
 	@include box-shadow;
-  background:	#F5F5F5; // whitesmoke
+  background:	#F5F5F5; //whitesmoke
 	border-radius: 5px;
 	min-height: 300px;
 	padding: 1em 5%;
@@ -146,12 +202,13 @@ body {
 	max-width: 100%;
 }
 
+// app/views/recipes/show.html.erb, title in the recipe description
 #recipe-info {
 	h1 {
+    @include text-shadow;
 		color: $green;
 		font-size: 36px;
 		font-weight: normal;
-		text-shadow: 1px 1px 1px #AAA;
 	}
 	.description {
 		color: #8A8A8A;
@@ -173,6 +230,7 @@ body {
 	width: 100%
 }
 
+//column headers on New & Edit Recipe pages
 .col-md-6 {
   h2 {
     color: $green;
@@ -186,7 +244,7 @@ body {
 	ul, ol {
 		padding-left: 18px;
 		li {
-			border-bottom: 1px solid #AAA; // separator between each ingredient/direction
+			border-bottom: 1px solid #AAA; //separator between each ingredient/direction
 			padding: 1em 0;
 		}
 	}
@@ -194,7 +252,7 @@ body {
 
 p {
 	  font-size: 15px;
-    white-space: pre-line; // makes prep & cook times appear on separate lines
+    white-space: pre-line; //make prep & cook times appear on separate lines
 }
 
 .panel_body {
