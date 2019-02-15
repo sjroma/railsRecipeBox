@@ -24,6 +24,7 @@ After cloning you will need to create and then initialize the database.
   - For the **models tests** run `ruby -Itest test/models/recipe_test.rb`  
 
 ### To-do
+- [x] Remove <code>.haml</code> gem, make all views <code>.erb</code>
 - [ ] Hide recipe id's, etc in the URL (look into **is_sluggable** and the **friendly_id** gem
 - [ ] Add ability to search by ingredients
 - [ ] Add ability for users to sign in
