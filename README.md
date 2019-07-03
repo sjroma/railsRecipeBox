@@ -12,17 +12,20 @@
 ### Clone the repository  
 After cloning you will need to create, and then initialize, the database
 * Create the database;  
-  * At the command line in the cloned directory run 
+  * At the command line in the cloned directory run   
   ```ruby 
-rails db:create```  
+   rails db:create  
+  ```  
 * Initialize the database;  
   * At the command line in the cloned directory run 
   ```ruby 
-  rake db:migrate```  
+   rake db:migrate  
+  ```  
 * To run the test suites  
   * For the **models tests** run 
   ```ruby 
-  ruby -Itest test/models/recipe_test.rb```  
+   ruby -Itest test/models/recipe_test.rb  
+  ```  
 ### To-do  
 - [x] Remove <code>.haml</code> gem, make all views <code>.erb</code>  
 - [ ] Add ability for users to register (sign up and/or then sign in)  
