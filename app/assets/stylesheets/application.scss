@@ -251,3 +251,9 @@ p {
     width: 100%;
     vertical-align: middle;
 }
+
+@media print {
+  .btn-primary, .btn-danger {
+    display: none;
+  }
+}
