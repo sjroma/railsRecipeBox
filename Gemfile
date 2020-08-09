@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Added the following for Recipe Box
 # gem 'haml', '~> 5.0', '>= 5.0.1' # alternate display to erb
-gem 'simple_form', '~> 3.5' # creates simple forms easier
+gem 'simple_form', '~> 5.0' # creates simple forms easier
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # bootstrap styling
 # because Rails 5.1 dropped jQuery from the default stack
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
