@@ -28,12 +28,13 @@ After cloning you will need to create, and then initialize, the database
   ```  
 ### To-do  
 - [x] Remove <code>.haml</code> gem, make all views <code>.erb</code>  
-- [ ] Add ability for users to register (sign up and/or then sign in)  
+- [ ] **Enhance:** Add ability for users to register (sign up and/or then sign in)  
   * Non registered users can see recipes  
   * Registered users can edit/delete recipes they've created (after signing in)  
 - [ ] **Enhance:** Hide recipe id's in the URL (look into **is_sluggable** and/or the **friendly_id** gem)  
 - [ ] **Enhance:** Add ability to search by ingredients  
 - [ ] **Enhance:** Refactor to add a generic landing page that allows users to select the list of recipes based on whether it's an Entree, Soups/Stews, Bread, Dessert, etc.  
+- [x] **Enhance:** Don't display 'Back', 'Edit' and 'Delete' buttons when printing a recipe
 - [ ] Figure out why running the tests wipes out everything in the db  
 
 #### Recipe Box originated by Mackenzie Child. Modifications by Steve Roma
