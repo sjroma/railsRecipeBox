@@ -1,8 +1,8 @@
 # Recipe Box, a Ruby on Rails application  
 * Ruby version  
-  * Ruby on Rails v5.1.3  
+  * **Ruby on Rails v5.1.3**  
 * System dependencies  
-  * postgreSQL v9.6.3  
+  * **postgreSQL v9.6.3**    
 * Gems used  
   * [bootstrap-sass](https://rubygems.org/gems/bootstrap-sass) - Bootstrap styling  
   * [simple_form](https://rubygems.org/gems/simple_form) - Easy creation of simple forms  
