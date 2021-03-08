@@ -14,11 +14,11 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-//@import url('https://fonts.googleapis.com/css?family=Englebert');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
 	background-color: #F5F5F5; //whitesmoke 
-  font-family: 'Englebert', 'Arial Rounded MT Bold', sans-serif;
+  font-family: 'Varela Round', 'Arial Rounded MT Bold', sans-serif;
 }
 
 @mixin box-shadow {
@@ -254,6 +254,10 @@ p {
 
 @media print {
   .btn-primary, .btn-danger {
+    display: none;
+  }
+  
+  .col-md-4 {
     display: none;
   }
 }
